@@ -6,9 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-   <form method="POST" ACTION="/cgi-bin/post-query">
-    Informe sua senha de acesso(8 caracteres):
-    <input type="password" value="xpto" name="sua_senha" size="8" maxlength="8">
-</form>
+    <form method="POST" ACTION="/cgi-bin/post-query">
+        Informe sua senha de acesso(8 caracteres):
+        <input type="password" value="xpto" name="sua_senha" size="8" maxlength="8">
+    </form>
+
+    <br>
+    
+    <form method="POST" ACTION="/cgi-bin/post-query">
+        Você não pode visualizar nada aqui embaixo.
+        <input type="hidden"  name="nome_oculto" value="forml2">
+    </form>
 </body>
 </html>
