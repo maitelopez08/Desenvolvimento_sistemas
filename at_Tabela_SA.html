@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Fornecedor</title>
+  <style>
+    table, th, td {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1 align="center">Tabela Formulário Categoria</h1>
+  <br>
+  <table align="center" cellspacing="0">
+    <tr>
+      <th rowspan="1"><img src="imagem/logo.png" alt="Paula Fernandez" height="60" width="70"></th> 
+      <th><strong>Padaria Pão Genial</strong></th>
+    </tr>
+    <tr>
+      <td><strong>Nome da Categoria:</strong></td>
+      <td>
+        <select name="categoria_produto">
+          <option value="paes">Pães</option>
+          <option value="bolos">Bolos e Tortas</option>
+          <option value="doces" selected>Doces</option>
+          <option value="bebidas">Bebidas</option>
+          <option value="salgados">Salgados</option>
+          <option value="sanduíches">Sanduíches</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Descrição:</strong></td>
+      <td><input type="text" size="15" maxlength="10"></td>
+    </tr>
+  </table>
+</body>
+</html>
