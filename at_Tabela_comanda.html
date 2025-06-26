@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Formulário Comanda</title>
 </head>
 <body>
-    rgdg
+  <h1 align="center">Formulário Comanda</h1>
+  <br><br>
+<center>
+  <form>
+    <table border="1" align="center" width="40%" cellspacing="0" cellpadding="5">
+      
+      <tr>
+        <td colspan="2" align="center">
+          <img src="imagem/logo.png" alt="Logo da Padaria" width="110">
+        </td>
+       <td colspan="6" align="center">
+            <font size="6"><b>Padaria Pão Genial</b></font>
+        </td>
+      </tr>
+      <tr>       
+        <th>Número de Comanda</th>    
+        <th>Id do Produto</th>
+        <th>Categoria</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Preço</th>
+        <th>Unidade</th>
+      </tr>
+
+      <tr>
+       
+        <td align="center"><input type="text" placeholder="Ex:1"></td>
+        <td align="center">
+        <select name="categoria_produto">
+          <option value="paes">Pães</option>
+          <option value="bolos">Bolos e Tortas</option>
+          <option value="doces" selected>Doces</option>
+          <option value="bebidas">Bebidas</option>
+          <option value="salgados">Salgados</option>
+          <option value="sanduíches">Sanduíches</option>
+        </select></td>
+      </td>
+       <td align="center"><input type="text" placeholder="Insira o Nome do produto"></td>
+        <td align="center"><input type="text" placeholder="Insira o Nome do produto"></td>
+        <td align="center"><input type="text" placeholder="Ex: 4"></td>
+        <td align="center"><input type="text" placeholder="Ex: R$9,99"></td>
+         <td align="center">
+        <select name="categoria_produto">
+          <option value="paes">Un</option>
+          <option value="bolos">Kg</option>
+        </select></td>
+      </tr>
+    </table>
+      <br><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+  </form>
+  </center>
+  <br><br>
+   <address>
+        <center>Maite López / Estudante / Técnico Desenvolvimento de Sistemas</center>
+    </address>
 </body>
 </html>
