@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Comanda</title>
+  <link rel="stylesheet" type="text/css" href="CSS/estilo.css" media="all"/>
+  <script src="js/validFormComanda.js"></script>
+</head>
+<body>
+  <header>
+    <span id="menu-btn" class="menu-icon">&#9776;</span>
+    <img src="../Atividades/img/logo.png" title="Logo da Padaria">
+    <ul>
+          <li class="dropdown">
+              <a a href="javascript:void(0)"
+              class="dropbtn">Cadastrar-Maite</a>
+              <div class="dropdown-content">
+                  <a href="../Formularios/atividade002_ava.html">Funcionario-Maite</a>
+                  <a href="../Formularios/AT_Tabela_Formulário_Fornecedor.html">Fornecedor-Maite</a>
+                  <a href="../Formularios/atividade.SA.html">Produto-Maite</a>                    
+              </div>
+          </li>
+      </ul>
+  </header>
+
+  <h1>Formulário Comanda</h1>
+  <br><br>
+
+  <form id="meuForm">
+    <table border="1" align="center" width="40%" cellspacing="0" cellpadding="5">
+      <tr>
+        <td colspan="2" align="center">
+          <img src="imagem/logo_pg.png" alt="Logo da Padaria" width="110">
+        </td>
+        <td colspan="6" align="center">
+          <font size="6"><b>Padaria Pão Genial</b></font>
+        </td>
+      </tr>
+
+      <tr>       
+        <th>Número de Comanda</th>    
+        <th>Categoria</th>
+        <th>Id do Produto</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Preço</th>
+        <th>Unidade</th>
+      </tr>
+
+      <tr>
+        <td align="center"><input type="number" min="1" id="numeroComanda" placeholder="Ex:1" required></td>
+
+        <td align="center">
+          <select id="categoriaProduto" required>
+            <option value="">Selecione</option>
+            <option value="paes">Pães</option>
+            <option value="bolos">Bolos e Tortas</option>
+            <option value="doces">Doces</option>
+            <option value="bebidas">Bebidas</option>
+            <option value="salgados">Salgados</option>
+            <option value="sanduíches">Sanduíches</option>
+          </select>
+        </td>
+
+        <td align="center"><input type="number" min="1" id="categoria" placeholder="Insira o ID do produto" required></td>
+        <td align="center"><input type="text" id="nomeProduto" placeholder="Insira o nome do produto" required></td>
+        <td align="center"><input type="number" id="quantidade" placeholder="Ex: 4" required></td>
+        <td align="center"><input type="number" id="preco" placeholder="Ex: R$9,99" required></td>
+
+       <td align="center">
+        <label><input type="radio" name="unidade" value="Un" required> Un</label>
+        <label><input type="radio" name="unidade" value="Kg"> Kg</label>
+      </td>
+
+      </tr>
+    </table>
+
+    <br><br>
+    <center>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button></center>
+  </form>
+
+  <div id="mensagem-erro" style="color: red; text-align: center; font-weight: bold; margin-top: 20px;"></div>
+
+  <br><br>
+  <address>
+    <center>Maite López / Estudante / Técnico Desenvolvimento de Sistemas</center>
+  </address>
+</body>
+</html>
